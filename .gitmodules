@@ -1,0 +1,12 @@
+[submodule "game-service"]
+	path = game-service
+	url = git@github.com:SkribbLoL/game-service.git
+[submodule "drawing-service"]
+	path = drawing-service
+	url = https://github.com/SkribbLoL/drawing-service
+[submodule "chat-service"]
+	path = chat-service
+	url = git@github.com:SkribbLoL/chat-service.git
+[submodule "frontend"]
+	path = frontend
+	url = git@github.com:SkribbLoL/frontend.git
