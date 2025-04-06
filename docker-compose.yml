@@ -1,0 +1,43 @@
+version: '3'
+services:
+  frontend:
+    container_name: skribblol-frontend
+    build: ./frontend
+    volumes:
+      - ./frontend:/usr/src/app
+    ports:
+      - "3000:3000"
+    restart: always
+  game-service:
+    container_name: game-service
+    build: ./game-service
+    volumes:
+      - ./game-service:/usr/src/app
+    ports:
+      - "5000:5000"
+    restart: always
+
+  drawing-service:
+    container_name: drawing-service
+    build: ./drawing-service/messages
+    volumes:
+      - ./drawing-service:/usr/src/app
+    ports:
+      - "5001:5001"
+    restart: always
+
+  chat-service:
+    container_name: chat-service
+    build: ./chat-service/messages
+    volumes:
+      - ./chat-service:/usr/src/app
+    ports:
+      - "5002:5002"
+    restart: always
+
+  redis:
+    image: redis:7.4.0
+    container_name: redis
+    ports:
+      - "6379:6379"
+    restart: always
