@@ -19,7 +19,7 @@ services:
 
   drawing-service:
     container_name: drawing-service
-    build: ./drawing-service/messages
+    build: ./drawing-service
     volumes:
       - ./drawing-service:/usr/src/app
     ports:
@@ -28,7 +28,7 @@ services:
 
   chat-service:
     container_name: chat-service
-    build: ./chat-service/messages
+    build: ./chat-service
     volumes:
       - ./chat-service:/usr/src/app
     ports:
