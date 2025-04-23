@@ -10,3 +10,6 @@
 [submodule "frontend"]
 	path = frontend
 	url = git@github.com:SkribbLoL/frontend.git
+[submodule ".github"]
+	path = .github
+	url = git@github.com:SkribbLoL/.github.git
