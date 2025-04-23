@@ -15,4 +15,4 @@ SkribbLoL is a real-time multiplayer drawing and guessing game, inspired by [skr
 - **Backend**: Node.js, Express
 - **Real-time**: Socket.io
 - **Frontend**: React (Vite)
-- **Database**: Redis
+- **Temporary Database**: Redis
