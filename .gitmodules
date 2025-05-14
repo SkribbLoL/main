@@ -13,3 +13,6 @@
 [submodule ".github"]
 	path = .github
 	url = git@github.com:SkribbLoL/.github.git
+[submodule "k8s"]
+	path = k8s
+	url = git@github.com:SkribbLoL/k8s.git
