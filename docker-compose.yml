@@ -17,6 +17,8 @@ services:
     ports:
       - "5000:5000"
     restart: always
+    depends_on:
+      - redis
 
   drawing-service:
     container_name: drawing-service
@@ -26,6 +28,8 @@ services:
     ports:
       - "5001:5001"
     restart: always
+    depends_on:
+      - redis
 
   chat-service:
     container_name: chat-service
@@ -35,6 +39,8 @@ services:
     ports:
       - "5002:5002"
     restart: always
+    depends_on:
+      - redis
 
   redis:
     image: redis:7.4.0
